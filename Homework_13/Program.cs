@@ -21,7 +21,7 @@
         }
 
         Console.WriteLine(symbolFrame);
-        Console.WriteLine(symbolFrame[0] + message + symbolFrame[symbolFrame.Length - 1]);
+        Console.WriteLine(symbol + message + symbol);
         Console.WriteLine(symbolFrame);
     }
 }
