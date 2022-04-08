@@ -7,6 +7,7 @@
         string message;
         int messageLength;
         string symbol;
+        string symbolFrame = "";
 
         Console.WriteLine("Введите слово:");
         message = Console.ReadLine();
@@ -14,16 +15,13 @@
         Console.WriteLine("Введите символ:");
         symbol = Console.ReadLine();
 
-        for (int i = 0; i < messageLength + 2; i++)
+        for (int i = -1; i <= messageLength; i++)
         {
-            Console.Write(symbol);
+            symbolFrame += symbol;
         }
 
-        Console.WriteLine($"\n{symbol}{message}{symbol}");
-
-        for (int i = 0; i < messageLength + 2; i++)
-        {
-            Console.Write(symbol);
-        }
+        Console.WriteLine(symbolFrame);
+        Console.WriteLine(symbolFrame[0] + message + symbolFrame[symbolFrame.Length - 1]);
+        Console.WriteLine(symbolFrame);
     }
 }
