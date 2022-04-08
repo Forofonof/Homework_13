@@ -19,7 +19,6 @@
         {
             symbolFrame += symbol;
         }
-
         Console.WriteLine(symbolFrame);
         Console.WriteLine(symbol + message + symbol);
         Console.WriteLine(symbolFrame);
